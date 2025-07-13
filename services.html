@@ -1,37 +1,123 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>PixelTees by Powell - Items We Have left in stock</title>
-  </head>
-  <body>
-    <!-- This link is the 'emergency exit' that takes users back to safety (your homepage). -->
-    <a href="index.html">Back to Home</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products and Services - Pixel Tees By Powell</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+      color: #333;
+      line-height: 1.6;
+    }
 
-    <!-- The <hr> tag creates a horizontal rule (a line), visually separating sections. -->
-    <hr>
+    nav.main-nav {
+      background-color: #222;
+      padding: 1em 0;
+    }
 
-    <!-- ====================================================== -->
-    <!--      START: UNIQUE PAGE CONTENT                       -->
-    <!-- This is where the specific content for each new page -->
-    <!-- (like 'About Us' or 'Our Services') will go.        -->
-    <!-- ====================================================== -->
-    <h1>Our Styles</h1>
-    <p>These are the items that we currently have left. Some things are in high demand so please be patient with us as we restock! We will always be as fast as possible.</p>
+    nav.main-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      margin: 0;
+      padding: 0;
+    }
 
+    nav.main-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav.main-nav a:hover {
+      color: #ffcc00;
+    }
+
+    header {
+      text-align: center;
+      padding: 2em 1em 1em;
+      background-color: #f5f5f5;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #111;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #222;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
     <ul>
-  <li>Short Sleeve Tees</li>
-  <li>Long Tleeve Tees</li>
-  <li>Tank Tops</li>
-  <li>Hoodies and Sweatshirts</li>
-  <li>Create your own and we'll make it</li>
-  <li>Create your own and you can make it!</li>
-</ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Our Services & Products</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
 
-    <!-- ====================================================== -->
-    <!--      END: UNIQUE PAGE CONTENT                         -->
-    <!-- ====================================================== -->
-    <hr>
-    <!-- The footer provides consistency and a professional closing on every page. -->
-    <p>(c) PixelTees. All Rights Reserved.</p>
-  </body>
+  <!-- Header -->
+  <header>
+    <h1>Our Products and Styles</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <p>
+        These are the items that we currently have in stock. Some are in high demand,
+        so please be patient with us as we restock — we promise to keep things moving as fast as possible!
+      </p>
+
+      <ul>
+        <li>Short Sleeve Tees</li>
+        <li>Long Sleeve Tees</li>
+        <li>Tank Tops</li>
+        <li>Hoodies and Sweatshirts</li>
+        <li>Create your own — and we'll make it!</li>
+        <li>Create your own — and you can make it!</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Pixel Tees By Powell. All rights reserved.
+  </footer>
+
+</body>
 </html>
