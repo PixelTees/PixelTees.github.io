@@ -5,31 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pixel Tees Gallery</title>
   <style>
-    /* Quick styling so the table looks nice */
+    /* Reset and base */
+    body {
+      margin: 0;
+      background-color: #222;
+      color: #eee;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      background-color: #222;
+      padding: 1rem 0;
+      margin-bottom: 2rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus {
+      color: #f06d06;
+      outline: none;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-weight: 700;
+      margin-bottom: 0.3em;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
     table {
       border-collapse: collapse;
+      margin: 0 auto;
       width: 100%;
-      max-width: 700px;
-      margin: 20px auto;
-      text-align: center;
+      max-width: 800px;
+      background-color: #333;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
-    td, th {
-      border: 1px solid #ddd;
-      padding: 8px;
+
+    caption {
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #f06d06;
+      background-color: #222;
     }
-    img {
+
+    th, td {
+      border: 1px solid #555;
+      padding: 12px;
+      color: #eee;
+    }
+
+    th {
+      background-color: #444;
+      font-weight: 700;
+    }
+
+    td {
+      background-color: #2a2a2a;
+    }
+
+    a img {
       width: 120px;
       height: auto;
+      border-radius: 4px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 4px rgba(0,0,0,0.6);
       cursor: pointer;
     }
-    a {
-      text-decoration: none;
-      color: inherit;
+
+    a img:hover,
+    a img:focus {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px #f06d06;
+      outline: none;
     }
-    caption {
-      caption-side: top;
-      font-size: 1.5em;
-      padding: 10px;
+
+    tfoot td {
+      background-color: #444;
+      font-style: italic;
+      color: #f0a040;
+      padding: 1rem;
     }
   </style>
 </head>
@@ -39,7 +122,9 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li> <!-- Link to this page -->
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -47,75 +132,75 @@
   <main>
     <h1>Pixel Tees Design Gallery</h1>
     <p>Click any image to see the full-size design.</p>
-<table>
-  <caption>Our Pixel Tee Designs</caption>
-  <thead>
-    <tr>
-      <th scope="col">Design 1</th>
-      <th scope="col">Design 2</th>
-      <th scope="col">Design 3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="images/shirt1.png">
-          <img src="images/shirt1.png" alt="Pixelated dragon on black tee" />
-        </a>
-      </td>
-      <td>
-        <a href="images/shirt2.png">
-          <img src="images/shirt2.png" alt="Retro rainbow on white t-shirt" />
-        </a>
-      </td>
-      <td>
-        <a href="images/shirt3.png">
-          <img src="images/shirt3.png" alt="Pixel heart on red tee" />
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="images/shirt4.png">
-          <img src="images/shirt4.png" alt="Sunset mountain pixel scene on hoodie" />
-        </a>
-      </td>
-      <td>
-        <a href="images/shirt5.png">
-          <img src="images/shirt5.png" alt="Glitch art graphic on oversized tee" />
-        </a>
-      </td>
-      <td>
-        <a href="images/shirt6.png">
-          <img src="images/shirt6.png" alt="Skull with neon background pixel design" />
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="images/shirt7.png">
-          <img src="images/shirt7.png" alt="Pixel camo pattern on green shirt" />
-        </a>
-      </td>
-      <td>
-        <a href="images/shirt8.png">
-          <img src="images/shirt8.png" alt="8-bit flame design on gray hoodie" />
-        </a>
-      </td>
-      <td>
-        <a href="images/shirt9.png">
-          <img src="images/shirt9.png" alt="Cute alien pixel art on baby blue shirt" />
-        </a>
-      </td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">Click any thumbnail to see the full-size version.</td>
-    </tr>
-  </tfoot>
-</table>
 
+    <table>
+      <caption>Our Pixel Tee Designs</caption>
+      <thead>
+        <tr>
+          <th scope="col">Design 1</th>
+          <th scope="col">Design 2</th>
+          <th scope="col">Design 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a href="images/shirt1.png" tabindex="0">
+              <img src="images/shirt1.png" alt="Pixelated dragon on black tee" />
+            </a>
+          </td>
+          <td>
+            <a href="images/shirt2.png" tabindex="0">
+              <img src="images/shirt2.png" alt="Retro rainbow on white t-shirt" />
+            </a>
+          </td>
+          <td>
+            <a href="images/shirt3.png" tabindex="0">
+              <img src="images/shirt3.png" alt="Pixel heart on red tee" />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="images/shirt4.png" tabindex="0">
+              <img src="images/shirt4.png" alt="Sunset mountain pixel scene on hoodie" />
+            </a>
+          </td>
+          <td>
+            <a href="images/shirt5.png" tabindex="0">
+              <img src="images/shirt5.png" alt="Glitch art graphic on oversized tee" />
+            </a>
+          </td>
+          <td>
+            <a href="images/shirt6.png" tabindex="0">
+              <img src="images/shirt6.png" alt="Skull with neon background pixel design" />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="images/shirt7.png" tabindex="0">
+              <img src="images/shirt7.png" alt="Pixel camo pattern on green shirt" />
+            </a>
+          </td>
+          <td>
+            <a href="images/shirt8.png" tabindex="0">
+              <img src="images/shirt8.png" alt="8-bit flame design on gray hoodie" />
+            </a>
+          </td>
+          <td>
+            <a href="images/shirt9.png" tabindex="0">
+              <img src="images/shirt9.png" alt="Cute alien pixel art on baby blue shirt" />
+            </a>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Click any thumbnail to see the full-size version.</td>
+        </tr>
+      </tfoot>
+    </table>
   </main>
 
 </body>
