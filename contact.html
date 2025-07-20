@@ -4,102 +4,50 @@
   <link rel="stylesheet" href="css/main.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Pixel Tees By Powell</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fefefe;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    nav.main-nav {
-      background-color: #222;
-      padding: 1em 0;
-    }
-
-    nav.main-nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 2em;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav.main-nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav.main-nav a:hover {
-      color: #ffcc00;
-    }
-
-    header {
-      text-align: center;
-      padding: 2em 1em 1em;
-      background-color: #f5f5f5;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
-      color: #111;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 2em auto;
-      padding: 0 1em;
-    }
-
-    section {
-      margin-bottom: 2em;
-    }
-
-    h2 {
-      color: #444;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5em;
-      margin-bottom: 0.5em;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1em;
-      background-color: #222;
-      color: #ccc;
-      font-size: 0.9em;
-    }
-  </style>
+  <title>Contact - Pixel Tees By Powell</title>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav class="main-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Our Services & Products</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Header -->
   <header>
+    <img src="images/PixelTeesLogo.png" alt="Pixel Tees Logo" />
     <h1>Contact Us</h1>
+    <p>We’d love to hear from you!</p>
   </header>
 
   <!-- Main Content -->
   <main>
     <section>
-      <p><strong>Email:</strong> pixeltees@gmail.com</p>
-      <p><strong>Help Number:</strong> +44 7369 489 290</p>
+      <h2>Get in Touch</h2>
+      <p>Email: <a href="mailto:hello@pixelteesbypowell.com">hello@pixelteesbypowell.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/pixeltees">@pixeltees</a></p>
+    </section>
+
+    <section>
+      <h2>Send a Message</h2>
+      <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5"></textarea><br /><br />
+
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
     </section>
   </main>
 
@@ -110,4 +58,3 @@
 
 </body>
 </html>
-
