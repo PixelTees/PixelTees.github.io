@@ -1,1 +1,48 @@
+/* === Font Setup (using system fonts for now) === */
+/* If you get a custom font later, update this section */
+@font-face {
+  font-family: 'PixelTeesSans';
+  src: url('../fonts/PixelTeesSans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* === Body === */
+body {
+  background-color: #fefefe;
+  color: #333;
+  font-family: 'PixelTeesSans', 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Headings === */
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #111;
+}
+
+/* === Responsive Images === */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Reusable Button Style === */
+.btn-primary {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background-color: #ffcc00;
+  color: #222;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e6b800;
+}
 
