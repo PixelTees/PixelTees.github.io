@@ -2,206 +2,195 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pixel Tees Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Pixel Tees By Powell</title>
   <style>
-    /* Reset and base */
+    /* Base Styles */
     body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
-      background-color: #222;
-      color: #eee;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      text-align: center;
-      padding: 2rem 1rem;
+      padding: 0;
+      background-color: #fefefe;
+      color: #333;
+      line-height: 1.6;
     }
 
-    header {
+    /* Navigation */
+    nav.main-nav {
       background-color: #222;
-      padding: 1rem 0;
-      margin-bottom: 2rem;
+      padding: 1em 0;
     }
-    nav ul {
+
+    nav.main-nav ul {
       list-style: none;
-      padding: 0;
-      margin: 0;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-    }
-    nav a {
-      color: #eee;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: color 0.3s ease;
-    }
-    nav a:hover,
-    nav a:focus {
-      color: #f06d06;
-      outline: none;
+      gap: 2em;
+      margin: 0;
+      padding: 0;
     }
 
+    nav.main-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav.main-nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 2em 1em 1em;
+      background-color: #f5f5f5;
+    }
+
+    header img {
+      max-width: 160px;
+      height: auto;
+      margin-bottom: 1em;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #111;
+    }
+
+    header p {
+      margin-top: 0.5em;
+      font-style: italic;
+      color: #666;
+    }
+
+    /* Main */
     main {
       max-width: 900px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-weight: 700;
-      margin-bottom: 0.3em;
-    }
-
-    p {
-      margin-top: 0;
-      margin-bottom: 2rem;
-      color: #ccc;
+      margin: 2em auto;
+      padding: 0 1em;
+      text-align: center;
     }
 
     table {
-      border-collapse: collapse;
-      margin: 0 auto;
       width: 100%;
-      max-width: 800px;
-      background-color: #333;
-      border-radius: 6px;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
 
     caption {
-      padding: 1rem;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #f06d06;
-      background-color: #222;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 1em;
+      background-color: #eee;
+      color: #333;
     }
 
     th, td {
-      border: 1px solid #555;
-      padding: 12px;
-      color: #eee;
+      padding: 1em;
+      border: 1px solid #ccc;
     }
 
     th {
-      background-color: #444;
-      font-weight: 700;
-    }
-
-    td {
-      background-color: #2a2a2a;
+      background-color: #f0f0f0;
     }
 
     a img {
       width: 120px;
       height: auto;
-      border-radius: 4px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 4px rgba(0,0,0,0.6);
+      border-radius: 6px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
       cursor: pointer;
     }
 
-    a img:hover,
-    a img:focus {
+    a img:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 12px #f06d06;
-      outline: none;
+      box-shadow: 0 0 12px #ffcc00;
     }
 
     tfoot td {
-      background-color: #444;
+      background-color: #f9f9f9;
       font-style: italic;
-      color: #f0a040;
-      padding: 1rem;
+      padding: 1em;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #222;
+      color: #ccc;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <img src="images/PixelTeesLogo.png" alt="Pixel Tees Logo" />
+    <h1>Pixel Tees By Powell</h1>
+    <p>Unique Clothing That Builds Self-Love</p>
   </header>
 
+  <!-- Main Gallery -->
   <main>
-    <h1>Pixel Tees Design Gallery</h1>
-    <p>Click any image to see the full-size design.</p>
+    <h2>Our Design Gallery</h2>
+    <p>Click on any shirt to view it full-size.</p>
 
     <table>
-      <caption>Our Pixel Tee Designs</caption>
+      <caption>Pixel Tee Designs</caption>
       <thead>
         <tr>
-          <th scope="col">Design 1</th>
-          <th scope="col">Design 2</th>
-          <th scope="col">Design 3</th>
+          <th>Design 1</th>
+          <th>Design 2</th>
+          <th>Design 3</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>
-            <a href="images/shirt1.png" tabindex="0">
-              <img src="images/shirt1.png" alt="Pixelated dragon on black tee" />
-            </a>
-          </td>
-          <td>
-            <a href="images/shirt2.png" tabindex="0">
-              <img src="images/shirt2.png" alt="Retro rainbow on white t-shirt" />
-            </a>
-          </td>
-          <td>
-            <a href="images/shirt3.png" tabindex="0">
-              <img src="images/shirt3.png" alt="Pixel heart on red tee" />
-            </a>
-          </td>
+          <td><a href="images/shirt1.png"><img src="images/shirt1.png" alt="Design 1" /></a></td>
+          <td><a href="images/shirt2.png"><img src="images/shirt2.png" alt="Design 2" /></a></td>
+          <td><a href="images/shirt3.png"><img src="images/shirt3.png" alt="Design 3" /></a></td>
         </tr>
         <tr>
-          <td>
-            <a href="images/shirt4.png" tabindex="0">
-              <img src="images/shirt4.png" alt="Sunset mountain pixel scene on hoodie" />
-            </a>
-          </td>
-          <td>
-            <a href="images/shirt5.png" tabindex="0">
-              <img src="images/shirt5.png" alt="Glitch art graphic on oversized tee" />
-            </a>
-          </td>
-          <td>
-            <a href="images/shirt6.png" tabindex="0">
-              <img src="images/shirt6.png" alt="Skull with neon background pixel design" />
-            </a>
-          </td>
+          <td><a href="images/shirt4.png"><img src="images/shirt4.png" alt="Design 4" /></a></td>
+          <td><a href="images/shirt5.png"><img src="images/shirt5.png" alt="Design 5" /></a></td>
+          <td><a href="images/shirt6.png"><img src="images/shirt6.png" alt="Design 6" /></a></td>
         </tr>
         <tr>
-          <td>
-            <a href="images/shirt7.png" tabindex="0">
-              <img src="images/shirt7.png" alt="Pixel camo pattern on green shirt" />
-            </a>
-          </td>
-          <td>
-            <a href="images/shirt8.png" tabindex="0">
-              <img src="images/shirt8.png" alt="8-bit flame design on gray hoodie" />
-            </a>
-          </td>
-          <td>
-            <a href="images/shirt9.png" tabindex="0">
-              <img src="images/shirt9.png" alt="Cute alien pixel art on baby blue shirt" />
-            </a>
-          </td>
+          <td><a href="images/shirt7.png"><img src="images/shirt7.png" alt="Design 7" /></a></td>
+          <td><a href="images/shirt8.png"><img src="images/shirt8.png" alt="Design 8" /></a></td>
+          <td><a href="images/shirt9.png"><img src="images/shirt9.png" alt="Design 9" /></a></td>
         </tr>
       </tbody>
       <tfoot>
-        <tr>
-          <td colspan="3">Click any thumbnail to see the full-size version.</td>
-        </tr>
+        <tr><td colspan="3">Click a thumbnail to view the full-size design.</td></tr>
       </tfoot>
     </table>
   </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Pixel Tees By Powell. All rights reserved.
+  </footer>
 
 </body>
 </html>
