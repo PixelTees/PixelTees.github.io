@@ -1,5 +1,4 @@
-/* === Font Setup (using system fonts for now) === */
-/* If you get a custom font later, update this section */
+/* === Font Setup (self-hosted font) === */
 @font-face {
   font-family: 'PixelTeesSans';
   src: url('../fonts/PixelTeesSans.woff2') format('woff2');
@@ -24,10 +23,82 @@ h1 {
   color: #111;
 }
 
+h2 {
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 /* === Responsive Images === */
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* === Navigation === */
+nav.main-nav {
+  background-color: #222;
+  padding: 1em 0;
+}
+
+nav.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav.main-nav a:hover {
+  color: #ffcc00;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  padding: 2em 1em 1em;
+  background-color: #f5f5f5;
+}
+
+header img {
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+header p {
+  margin-top: 0.5em;
+  font-style: italic;
+  color: #666;
+}
+
+/* === Main Content === */
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #222;
+  color: #ccc;
+  font-size: 0.9em;
 }
 
 /* === Reusable Button Style === */
@@ -45,4 +116,3 @@ img {
 .btn-primary:hover {
   background-color: #e6b800;
 }
-
