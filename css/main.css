@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-/* === Body === */
+/* === Base Body === */
 body {
   background-color: #fefefe;
   color: #333;
@@ -21,9 +21,11 @@ h1 {
   font-size: 2.5em;
   font-weight: bold;
   color: #111;
+  margin: 0.5em 0;
 }
 
 h2 {
+  font-size: 1.8em;
   color: #444;
   border-bottom: 2px solid #ddd;
   padding-bottom: 0.5em;
@@ -83,13 +85,15 @@ header p {
 
 /* === Main Content === */
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 2em auto;
   padding: 0 1em;
+  text-align: center;
 }
 
 section {
   margin-bottom: 2em;
+  text-align: left;
 }
 
 /* === Footer === */
@@ -117,61 +121,7 @@ footer {
   background-color: #e6b800;
 }
 
-/* === Gallery Page Styles === */
-nav.main-nav {
-  background-color: #222;
-  padding: 1em 0;
-}
-
-nav.main-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  margin: 0;
-  padding: 0;
-}
-
-nav.main-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav.main-nav a:hover {
-  color: #ffcc00;
-}
-
-header {
-  text-align: center;
-  padding: 2em 1em 1em;
-  background-color: #f5f5f5;
-}
-
-header img {
-  max-width: 160px;
-  height: auto;
-  margin-bottom: 1em;
-}
-
-header h1 {
-  margin: 0;
-}
-
-header p {
-  margin-top: 0.5em;
-  font-style: italic;
-  color: #666;
-}
-
-main {
-  max-width: 900px;
-  margin: 2em auto;
-  padding: 0 1em;
-  text-align: center;
-}
-
+/* === Gallery Table Styles === */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -179,6 +129,7 @@ table {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
+  margin-top: 2em;
 }
 
 caption {
@@ -195,5 +146,65 @@ th, td {
 }
 
 th {
-  back
+  background-color: #f0f0f0;
+}
 
+a img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+a img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ffcc00;
+}
+
+tfoot td {
+  background-color: #f9f9f9;
+  font-style: italic;
+  padding: 1em;
+  color: #555;
+}
+
+/* === Contact Form Styles === */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #ffcc00;
+  color: #222;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e6b800;
+}
